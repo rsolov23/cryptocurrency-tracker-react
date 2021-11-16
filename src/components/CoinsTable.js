@@ -40,11 +40,11 @@ export default function CoinsTable() {
       "&:hover": {
         backgroundColor: "#131111",
       },
-      fontFamily: "Montserrat",
+      fontFamily: "'IBM Plex Sans', sans-serif",
     },
     pagination: {
       "& .MuiPaginationItem-root": {
-        color: "gold",
+        color: "#D4AF37",
       },
     },
   });
@@ -72,7 +72,6 @@ export default function CoinsTable() {
 
   useEffect(() => {
     fetchCoins();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currency]);
 
   const handleSearch = () => {
@@ -82,13 +81,12 @@ export default function CoinsTable() {
         coin.symbol.toLowerCase().includes(search)
     );
   };
-
   return (
     <ThemeProvider theme={darkTheme}>
       <Container style={{ textAlign: "center" }}>
         <Typography
           variant="h4"
-          style={{ margin: 18, fontFamily: "Montserrat" }}
+          style={{ margin: 18, fontFamily: "'IBM Plex Sans', sans-serif" }}
         >
           Cryptocurrency Prices by Market Cap
         </Typography>
@@ -100,7 +98,7 @@ export default function CoinsTable() {
         />
         <TableContainer component={Paper}>
           {loading ? (
-            <LinearProgress style={{ backgroundColor: "gold" }} />
+            <LinearProgress style={{ backgroundColor: "#D4AF37" }} />
           ) : (
             <Table aria-label="simple table">
               <TableHead style={{ backgroundColor: "#EEBC1D" }}>
@@ -110,7 +108,7 @@ export default function CoinsTable() {
                       style={{
                         color: "black",
                         fontWeight: "700",
-                        fontFamily: "Montserrat",
+                        fontFamily: "'IBM Plex Sans', sans-serif",
                       }}
                       key={head}
                       align={head === "Coin" ? "" : "right"}
@@ -120,7 +118,6 @@ export default function CoinsTable() {
                   ))}
                 </TableRow>
               </TableHead>
-
               <TableBody>
                 {handleSearch()
                   .slice((page - 1) * 10, (page - 1) * 10 + 10)
@@ -190,8 +187,6 @@ export default function CoinsTable() {
             </Table>
           )}
         </TableContainer>
-
-        {/* Comes from @material-ui/lab */}
         <Pagination
           count={(handleSearch()?.length / 10).toFixed(0)}
           style={{

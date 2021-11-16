@@ -3,7 +3,7 @@ import Carousel from "./Carousel";
 
 const useStyles = makeStyles((theme) => ({
   banner: {
-    backgroundImage: "url(./banner.jpg)",
+    backgroundImage: "url(./banner.png)",
   },
   bannerContent: {
     height: 400,
@@ -38,7 +38,7 @@ function Banner() {
             style={{
               fontWeight: "bold",
               marginBottom: 15,
-              fontFamily: "Montserrat",
+              fontFamily: "'IBM Plex Sans', sans-serif",
             }}
           >
             Crypto Tracker
@@ -48,7 +48,7 @@ function Banner() {
             style={{
               color: "darkgrey",
               textTransform: "capitalize",
-              fontFamily: "Montserrat",
+              fontFamily: "'IBM Plex Sans', sans-serif",
             }}
           >
             Get all of the current information regarding your favorite Crypto

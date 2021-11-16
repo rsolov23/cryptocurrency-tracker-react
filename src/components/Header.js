@@ -11,14 +11,14 @@ import {
   makeStyles,
   ThemeProvider,
 } from "@material-ui/core/styles";
-import { useNavigate } from "react-router";
+import { useHistory } from "react-router";
 import { CryptoState } from "../CryptoContext";
 
 const useStyles = makeStyles((theme) => ({
   title: {
     flex: 1,
     color: "#D4AF37",
-    fontFamily: "Montserrat",
+    fontFamily: "'IBM Plex Sans', sans-serif",
     fontWeight: "bold",
     cursor: "pointer",
   },
@@ -36,7 +36,7 @@ const darkTheme = createTheme({
 function Header() {
   const classes = useStyles();
 
-  const history = useNavigate();
+  const history = useHistory();
 
   const { currency, setCurrency } = CryptoState();
   console.log(currency);
