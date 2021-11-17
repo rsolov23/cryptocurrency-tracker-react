@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flex: 1,
     color: "#D4AF37",
-    fontFamily: "'IBM Plex Sans', sans-serif",
+    fontFamily: "'Montserrat Alternates', sans-serif",
     fontWeight: "bold",
     cursor: "pointer",
   },

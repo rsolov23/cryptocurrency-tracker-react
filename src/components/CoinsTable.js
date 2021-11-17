@@ -40,7 +40,7 @@ export default function CoinsTable() {
       "&:hover": {
         backgroundColor: "#131111",
       },
-      fontFamily: "'IBM Plex Sans', sans-serif",
+      fontFamily: "'Montserrat Alternates', sans-serif",
     },
     pagination: {
       "& .MuiPaginationItem-root": {
@@ -86,7 +86,7 @@ export default function CoinsTable() {
       <Container style={{ textAlign: "center" }}>
         <Typography
           variant="h4"
-          style={{ margin: 18, fontFamily: "'IBM Plex Sans', sans-serif" }}
+          style={{ margin: 18, fontFamily: "'Montserrat Alternates', sans-serif" }}
         >
           Cryptocurrency Prices by Market Cap
         </Typography>
@@ -108,7 +108,7 @@ export default function CoinsTable() {
                       style={{
                         color: "black",
                         fontWeight: "700",
-                        fontFamily: "'IBM Plex Sans', sans-serif",
+                        fontFamily: "'Montserrat Alternates', sans-serif",
                       }}
                       key={head}
                       align={head === "Coin" ? "" : "right"}

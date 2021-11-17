@@ -38,7 +38,7 @@ function Banner() {
             style={{
               fontWeight: "bold",
               marginBottom: 15,
-              fontFamily: "'IBM Plex Sans', sans-serif",
+              fontFamily: "'Montserrat Alternates', sans-serif",
             }}
           >
             Crypto Tracker
@@ -48,7 +48,7 @@ function Banner() {
             style={{
               color: "darkgrey",
               textTransform: "capitalize",
-              fontFamily: "'IBM Plex Sans', sans-serif",
+              fontFamily: "'Montserrat Alternates', sans-serif",
             }}
           >
             Get all of the current information regarding your favorite Crypto
